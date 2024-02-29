@@ -44,12 +44,19 @@ while i < length_string:
             string.append(".")
 
     if i < length_string:
-        if string == "a"
+        if string == "a" and string[i+1] == "n" and string[i+2] == "t":
+            string[i] = "."
+            
+    if string[i] == "t": count_t +=1
+        if i +1 <        
+    print(string)
 
 
-if count_a > count_n and count_a > count_t:
-    dead_ants = count_a
-if count_n > count_a and count_n > count_t:
-    dead_ants = count_n
-if count_t > count_a and count_t > count_n:
-    dead_ants = count_t
+    if count_a > count_n and count_a > count_t:
+        dead_ants = count_a
+    if count_n > count_a and count_n > count_t:
+        dead_ants = count_n
+    if count_t > count_a and count_t > count_n:
+        dead_ants = count_t
+
+    i= i+1
