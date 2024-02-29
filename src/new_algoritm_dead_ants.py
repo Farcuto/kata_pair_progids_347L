@@ -12,7 +12,7 @@ El contador con el valor superior se tomara como la cantidad de hormigas muertas
 
 '''
          #0123456789012345678901234567890123456789012345678901234   
-string = " ...an t...ant..na..t.a nt.t..ant... ant..ant..ant.anant..t"
+string = " ...ant...ant..na..t.ant.t..ant...ant..ant..ant.anant..t"
     
 def dead_ants_new(string):
     
