@@ -59,9 +59,6 @@ def dead_ants_new(string):
         if string[i] == "t":        
             count_t = count_t + 1
             
-        
-
-
         if count_a > count_n and count_a > count_t:
             dead_ants = count_a
         if count_n > count_a and count_n > count_t:
@@ -70,13 +67,13 @@ def dead_ants_new(string):
             dead_ants = count_t
 
         i= i+1
-        print("_________________________________________________________")
-        print(i)
-        print("".join(string))
-        print("count a: ",count_a)
-        print("count n: ",count_n)
-        print("count t: ",count_t)
-        print("count deads: ",dead_ants)
+        #print("_________________________________________________________")
+        #print(i)
+        #print("".join(string))
+        #print("count a: ",count_a)
+        #print("count n: ",count_n)
+        #print("count t: ",count_t)
+        #print("count deads: ",dead_ants)
         
         
     return dead_ants
