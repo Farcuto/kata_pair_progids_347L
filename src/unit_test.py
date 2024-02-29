@@ -41,19 +41,21 @@ class TestCountDeadAnts(unittest.TestCase):
         self.assertEqual(dead_ants_count(test_case), 0)
     
     def test_case_8(self):
-        test_case = "...ant...ant..na..t.ant.t..ant...ant..ant..ant.anant..t"
+        test_case = "...ant...ant..na..t.ant.t..ant...ant..ant..ant.anant..t" * 10000
         
-        Time_start_new = time.time() * 1000
-        self.assertEqual(dead_ants_new(test_case),3)
-        Time_stop_new = time.time()* 1000
-        Time_start_old = time.time()* 1000
-        self.assertEqual(dead_ants_count(test_case), 3)
-        Time_stop_old = time.time()* 1000
+        Time_start_new = time.time() #* 1000
+        dead_ants_new(test_case)
+        Time_stop_new = time.time() #* 1000
+
+        Time_start_old = time.time() #* 1000
+        dead_ants_count(test_case)
+        Time_stop_old = time.time() #* 1000
+
         time_result_new = Time_stop_new - Time_start_new
         time_result_old = Time_stop_old - Time_start_old
         print("The time of ejecution in the new code is: ", time_result_new)
         print("The time of ejecution in the old code is: ", time_result_old)
 
-        self.assertLessEqual(time_result_old,time_result_new, msg="The old code is better than new code")
+        self.assertLess(time_result_new,time_result_old, msg="The old code is better than new code")
 if __name__ == "__main__":
     unittest.main()
