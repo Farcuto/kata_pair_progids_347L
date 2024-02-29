@@ -16,8 +16,35 @@ count_a = 0
 count_n = 0
 count_t = 0
 dead_ants = 0
+i = 0
+        #0123456789012345678901234567890123456789012345678901234   
+string = "...ant...ant..na..t.ant.t..ant...ant..ant..ant.anant..t"
+length_string = len(string)
+string = list(string)
 
+while i < length_string:
+    if i < length_string - 4:
+        #for j in range(4):
+           # if string [i+j] == " ":
+            #    del string
+        if string[i] == " ":
+            del string[i]
+            string.append(".")
 
+        if string[i+1] == " ":
+            del string[i+1]
+            string.append(".")
+
+        if string[i+2] == " ":
+            del string[i+2]
+            string.append(".")
+        
+        if string[i+3] == " ":
+            del string[i+3]
+            string.append(".")
+
+    if i < length_string:
+        if string == "a"
 
 
 if count_a > count_n and count_a > count_t:
